@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body> 
-	<form action="addMessage" target="content" method="post">
+	<form  target="content" ">
 		发言：<input type="text" name="info" placeholder="请输入关键字" class="addMessage" id="info">
 		<input value="发送" type="submit" id="sub" >
 	</form>
@@ -18,7 +18,8 @@
 			var info=document.getElementById("info").value;
 			if(info!=null){
 				$.ajax({
-					url:"",
+					url:"addMessage",
+					data:$("#info").serialize(),
 					type="post",
 					dataType:"json",
 					success:function(obj){
@@ -30,6 +31,6 @@
 				alert("消息不能为空");
 			}
 			
-		}); 
+		})
 	</script>
 </html>
