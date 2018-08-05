@@ -41,3 +41,20 @@ Java语言中，每个类都有一个函数是getClass（），这个函数可�
 钥匙
 	ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 	ssh-add ~/.ssh/id_rsa
+	
+	git  remote add origin git@github.com:login-jack/cici.git
+	git push -u origin master
+	
+	[](https://github.com/login-jack/cici.git)
+	
+	git remote add origin https://github.com/login-jack/cici.git
+	
+先删除远程 Git 仓库
+[](https://blog.csdn.net/top_code/article/details/50381432)
+$ git remote rm origin
+[](https://www.cnblogs.com/zlxbky/p/7727895.html)
+	
+	
+	
+	
+	

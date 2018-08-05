@@ -18,7 +18,7 @@
 			var info=document.getElementById("info").value;
 			if(info!=null){
 				$.ajax({
-					url:"addMessage",
+					url:"",
 					type="post",
 					dataType:"json",
 					success:function(obj){
