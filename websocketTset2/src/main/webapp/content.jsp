@@ -6,20 +6,44 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Insert title here</title>
+<link href="css/char.css" rel="stylesheet"/>
 </head>
 <body>
-	<div>
+<div>
 	<%
 		//页面每隔1秒刷新一遍
-		response.setHeader("refresh", "5");
+		response.setHeader("refresh", "1");
 	%>
-	<c:forEach items="${allMessage }" var="message">
+	<%-- <c:forEach items="${allMessage }" var="message">
 		${message.userid }
 		在${message.time }说：
 		<div id="mes" class="mes"><font color="green">${message.info}</font></div>
-	</c:forEach>
+	</c:forEach> --%>
+	<%
 	
+	%>
+			
+        	<c:forEach items="${allMessage}" var="message">
+        	<c:if test="${message.userid==obj.message.userid}">
+			<div >
+            <p class="textM textBlue" >${message.info }</p>
+            <div style="clear: both;"></div><!-- 解决浮动bug -->
+            </div>
+              </c:if>
+              
+              <c:if test="${message.userid==message.userid}">
+            <div>
+            <p class="textM textWhite">${message.info }</p>
+            </div>
+            </c:if>
+            </c:forEach>
+          
+            
+            <c:forEach items="${allMessage}" var="message">
+            </c:forEach>
+            
+    
+</div>	
 	
-	</div>
 </body>
 </html>

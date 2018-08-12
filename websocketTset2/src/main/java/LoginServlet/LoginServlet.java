@@ -20,7 +20,7 @@ public class LoginServlet extends HttpServlet {
 		//获取用户输入
 				String userid=request.getParameter("userid");
 				System.out.println(userid);
-				//userid=new String (userid.getBytes("utf-8"));
+				
 				//获取application 对象
 				ServletContext application =this.getServletContext();
 				//获取application对象中的user

@@ -30,11 +30,6 @@
 	  <version>1.3.2</version>
 	</dependency>
 	<!-- mysql -->
-	<dependency>
-	  <groupId>MySQL</groupId>
-	  <artifactId>mysql-connector-java</artifactId>
-	  <version>5.1.6</version>
-	</dependency>
 	<!-- commons-dbcp -->
 	<dependency>
 	  <groupId>commons-dbcp</groupId>

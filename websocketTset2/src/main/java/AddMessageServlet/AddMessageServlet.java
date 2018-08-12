@@ -31,12 +31,9 @@ public class AddMessageServlet extends HttpServlet {
 				//调用业务层逻辑
 				Mservice.addMessages(message);
 				 // 保存更新后的消息
-				        application.setAttribute("allMessage", Mservice.getAllessage());
-				
+				application.setAttribute("allMessage", Mservice.getAllessage());
 			         // 转向聊天页面
 			         response.sendRedirect("content.jsp");
-			     info =null;
-			     System.out.println(info);
 				
 	}
 

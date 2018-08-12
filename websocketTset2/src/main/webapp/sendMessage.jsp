@@ -7,30 +7,19 @@
 <title>Insert title here</title>
 </head>
 <body> 
-	<form  target="content" ">
-		发言：<input type="text" name="info" placeholder="请输入关键字" class="addMessage" id="info">
-		<input value="发送" type="submit" id="sub" >
-	</form>
+
+		<form action="addMessage" target="content" method="post">
+		发言：<input type="text" name="info" >
+		<input value="发送" type="submit" class="btn"  >
+		</form>
+		
+
+		
+		
 </body>
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript">
-		$("#sub").click(function(){
-			var info=document.getElementById("info").value;
-			if(info!=null){
-				$.ajax({
-					url:"addMessage",
-					data:$("#info").serialize(),
-					type="post",
-					dataType:"json",
-					success:function(obj){
-						document.getElementById("info").value="";
-					}
-				});
-				
-			}else{
-				alert("消息不能为空");
-			}
-			
-		})
+	
+	
 	</script>
 </html>
